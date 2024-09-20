@@ -1,5 +1,5 @@
 		
-ASSIGNMENT 01: Build Java Console based Banking App which below functionalities using Collection with Exception Handling
+ASSIGNMENT 01: Build Java Console based Product Management App which below functionalities using Collection with Exception Handling
 				1] Add Product
 				2] Update Product
 				3] Delete Product

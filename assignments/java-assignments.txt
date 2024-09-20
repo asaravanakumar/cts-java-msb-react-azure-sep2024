@@ -1,0 +1,28 @@
+		
+ASSIGNMENT 01: Build Java Console based Banking App which below functionalities using Collection with Exception Handling
+				1] Add Product
+				2] Update Product
+				3] Delete Product
+				4] View Product
+				5] View All Products
+				6] Print Statistics
+					a] No of products whose price more than 10k
+					b] Show no of products by product category with sorting
+					c] Show avg price by product category			
+					d] List product ids whose product name contains given name				
+				6] Exit
+
+	Product
+	   id		int
+	   category	ProductCategory
+	   description	String
+	   price	double
+	   active	boolean
+	   createTime	LocalDateTime
+	   updateTime	LocalDateTime
+
+	ProductCategory
+	   Mobiles
+	   Laptops
+	   Furnitures
+	   Stationary

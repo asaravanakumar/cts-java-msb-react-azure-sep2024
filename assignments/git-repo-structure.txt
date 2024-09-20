@@ -1,0 +1,72 @@
+cts-java-msb-react-azure-bootcamp-sep2024
+
+	|
+	|____	labs
+			|
+			|__java
+					|
+					|___ adv-java-labs
+
+			|
+			|__springboot
+					|
+					|___ sboot-rest-labs
+			|
+			|__springcloud
+					|
+					|___ scloud-**-labs
+						|
+			|__frontend
+					|
+					|___ javascript-labs
+					|
+					|___ typescript-labs
+					|
+					|___ react-**-labs
+
+			|__cloud
+					|
+					|___ azure-**-labs
+
+	|
+	|____ 	assignments
+				|
+				|__java			
+										
+					|__ productapp-with-collection
+					|
+					|__ productapp-with-lamexp-stream-stats
+					|
+					|__ productapp-with-impexp-thread
+
+				|__springboot
+					|
+					|__ productapp-with-sboot-rest
+					|
+					|__ productapp-with-sboot-data-jpa
+
+				|__microservices
+					|
+					|__ productapp-**-service
+
+				|__frontend
+					|
+					|__ productapp-**-ui
+
+				
+	|
+	|____ 	capstone
+				|
+				|__appname
+					|
+					|__registry-service
+					|
+					|__gateway-service	
+					|
+					|__config-service		
+					|
+					|__admin-service
+					|					|
+					|__**-service
+					|
+					|__**app-ui	

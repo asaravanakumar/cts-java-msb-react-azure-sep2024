@@ -1,4 +1,4 @@
-cts-java-msb-react-azure-bootcamp-sep2024
+cts-bootcamp-java-msb-react-azure
 
 	|
 	|____	labs
@@ -15,7 +15,7 @@ cts-java-msb-react-azure-bootcamp-sep2024
 			|__springcloud
 					|
 					|___ scloud-**-labs
-						|
+						
 			|__frontend
 					|
 					|___ javascript-labs

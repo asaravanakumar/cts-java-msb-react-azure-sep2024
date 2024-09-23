@@ -21,8 +21,11 @@ ASSIGNMENT 01: Build Java Console based Product Management App which below funct
 	   createTime	LocalDateTime
 	   updateTime	LocalDateTime
 
+
 	ProductCategory
 	   Mobiles
 	   Laptops
 	   Furnitures
 	   Stationary
+
+ASSIGNMENT 02: Enhance Java Console based Product Management App which Lamba Expressions for Validation and implement Print Statistics using Stream API.

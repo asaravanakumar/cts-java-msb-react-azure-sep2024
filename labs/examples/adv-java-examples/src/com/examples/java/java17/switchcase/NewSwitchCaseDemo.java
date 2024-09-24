@@ -15,7 +15,17 @@ public class NewSwitchCaseDemo {
     }
 
     public static String getDayType(String day) {
-        // Java 14 feature
+        // Java 14 feature - #1
+        String result = switch (day) {
+            case "Monday", "Tuesday", "Wednesday","Thursday", "Friday" -> "Weekday";
+            case "Saturday", "Sunday" -> "Weekend";
+            default -> "Invalid day.";
+        };
+        return result;
+    }
+
+    public static String getDayType1(String day) {
+        // Java 14 feature - #2
         String result = switch (day) {
             case "Monday", "Tuesday", "Wednesday","Thursday", "Friday": yield "Weekday";
             case "Saturday", "Sunday": yield "Weekend";
@@ -23,16 +33,6 @@ public class NewSwitchCaseDemo {
         };
         return result;
 
-    }
-
-    public static String getDayType1(String day) {
-        // Java 17 feature
-        String result = switch (day) {
-            case "Monday", "Tuesday", "Wednesday","Thursday", "Friday" -> "Weekday";
-            case "Saturday", "Sunday" -> "Weekend";
-            default -> "Invalid day.";
-        };
-        return result;
     }
 
     public static String getDayTypeOldStyle(String day) {

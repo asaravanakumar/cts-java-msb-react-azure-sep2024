@@ -22,20 +22,20 @@ Release
 	- v5.0 -> 2004	=> JSE, JEE, JME
 	- v6.0 -> 2006
 	- v7.0 -> 2011
-	- v8.0 -> 2014 (LTS) => OOP + FP (Lambda Expr + Stream API)
-	- v9.0 -> 2017
-	- v10  -> 2018(Mar)
-	- v11  -> 2018(Sep) (LTS)
+	- v8.0 -> 2014 (LTS) => OOP + FP (Lambda Expr + Stream API + Optional + New DateTime)
+	- v9.0 -> 2017 => (Module System, Reactive Streams - Flow API, ReactRx, Project Reactor), JShell (REPL)
+	- v10  -> 2018(Mar) 
+	- v11  -> 2018(Sep) (LTS) => var (LVTI), compile free launch, string enhancements, collection, stream api enhancements
 	- v12  -> 2019(Mar)
 	- v13  -> 2019(Sep)
 	- v14  -> 2020(Mar)
 	- v15  -> 2020(Sep)
 	- v16  -> 2021(Mar)
-	- v17  -> 2021(Sep) (LTS)
+	- v17  -> 2021(Sep) (LTS) => sealed class, record, new switch case, text block
 	- v18  -> 2022(Mar)
 	- v19  -> 2022(Sep)
 	- v20  -> 2023(Mar)
-	- v21  -> 2023(Sep) (LTS)
+	- v21  -> 2023(Sep) (LTS) => virtual threads, pattern matching
 	- v22  -> 2024(Mar)
 	- v23  -> 2024(Sep)
 
@@ -254,7 +254,7 @@ Collections Framework Hierarchy
 				- ArrayList - faster frequent reads, random access
 				- LinkedList - frequent insertions and updations
 			- Set - not allows duplicates, sorted, no index
-				- HashSet - faster search, works based on hashing techinque, not ordered/sorted, allows null values
+				- HashSet - faster search, works based on hashing technique, not ordered/sorted, allows null values
 				- TreeSet - sorting, not allows null values
 					- Comparable
 						- compareTo(object ob)
@@ -399,7 +399,61 @@ Java I/O
 	ObjectInputStream in1 = new ObjectOutputStream(in);
 
 	Order order = (Order) in1.readObject()
-	
+
+Multi Threading
+	- Process vs Thread
+	- Thread Lifecycle
+		- New
+		- Runnable
+		- Running
+		- Wait
+		- Sleep
+		- Blocked		
+		- Terminated/Dead
+	- Ways to create Thread
+		- Extending Thread class
+		- Implementing Runnable interface
+		- Implementing Callable interface
+			- impl/override call method
+			- call method can return a value after the execution
+			- create ExecutorService instance with ThreadPool (Fixed, Cached, SigleThread, etc..)
+			- submit the instance of class implementing Callable interface
+			- returns reference of Future object to refer the thread submitted
+			- get the value returned by thread from Future
+			- shutdown the ExecutorService
+	- Thread Constructs	
+		- sleep
+		- wait
+		- notify
+		- notifyall
+		- join
+		- yield
+	- Thread Synchrozation
+		- Atomic, Visible, Ordered
+		- synchronized blocks
+			synchrozied(this) { // acquire lock
+				
+			} // lock released
+		- synchronized method
+			public synchronzied void fundTransfer() {}
+	- How to make collections thread safe
+		- Collections.synchronized(list)
+		- Use thread safe concurrent collections	
+			- BlockingQueue
+			- ConcurrentHashMap	
+			- ConcurrentSkipListMap
+	- DeadLock
+
+JDBC API
+	- Specification to access RDBMS from Java
+	- 4 Types of drivers
+	- Steps required to access database
+		- Registering database drivers OR creating datasource
+		- Get Connection
+		- Create Statement
+		- Execute Query
+		- Access ResultSet
+	- RowSet provides more features to access the data on top of Resultset	
 
 [Appendix]
 Class Libraries

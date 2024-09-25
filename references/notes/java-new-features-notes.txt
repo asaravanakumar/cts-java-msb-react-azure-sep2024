@@ -33,7 +33,7 @@ Java New Features
 
 				ZonedDateTime
 				
-				Instant - GMT - Timestamp
+				Instant - UTC - Timestamp
 
 				Period
 				Duration
@@ -200,7 +200,10 @@ Java New Features
 
 	Java 16 Features
 
+			Records
+			Pattern Matching for instanceof
 			Stream Enhancement - toList()
+			Packaging Tool
 
 			Preview Features
 				Pattern Matching for instanceOf and typeChecks
@@ -209,10 +212,6 @@ Java New Features
 
 	Java 17 Features (LTS)
 
-			Pattern Matching
-			Switch Expression
-			Records
-				
 			Sealed Classes
 
 			Preview / Incubating Features

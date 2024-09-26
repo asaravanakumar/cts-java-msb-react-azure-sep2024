@@ -10,6 +10,8 @@ cts-bootcamp-java-msb-react-azure
 			|
 			|__springboot
 					|
+					|___ sboot-core-labs
+					|
 					|___ sboot-rest-labs
 			|
 			|__springcloud

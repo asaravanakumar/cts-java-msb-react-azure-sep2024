@@ -5,7 +5,7 @@ ASSIGNMENT 01: Build Java Console based Product Management App which below funct
 				3] Delete Product
 				4] View Product
 				5] View All Products
-				6] Print Statistics
+				6] Print Statistics [Implement using Java Collection]
 					a] No of products whose price more than 10k
 					b] Show no of products by product category with sorting
 					c] Show avg price by product category			
@@ -28,4 +28,30 @@ ASSIGNMENT 01: Build Java Console based Product Management App which below funct
 	   Furnitures
 	   Stationary
 
-ASSIGNMENT 02: Enhance Java Console based Product Management App which Lamba Expressions for Validation and implement Print Statistics using Stream API.
+ASSIGNMENT 02: Enhance Java Console based Product Management App which LambDa Expressions for Validation and implement Print Statistics using Stream API.
+				1] Add Product
+				2] Update Product
+				3] Delete Product
+				4] View Product
+				5] View All Products
+				6] Print Statistics [Implement using Stream API]
+					a] No of products whose price more than 10k
+					b] Show no of products by product category with sorting
+					c] Show avg price by product category			
+					d] List product ids whose product name contains given name				
+				6] Exit
+
+ASSIGNMENT 03:  Enhance Java Console based Product Management App to import and export the details from or to file as separate threads
+				1] Add Product
+				2] Update Product
+				3] Delete Product
+				4] View Product
+				5] View All Products
+				6] Print Statistics [Implement using Stream API]
+					a] No of products whose price more than 10k
+					b] Show no of products by product category with sorting
+					c] Show avg price by product category			
+					d] List product ids whose product name contains given name				
+				7] Import [Product Details]
+				8] Export [Product Details]
+				9] Exit

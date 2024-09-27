@@ -1,0 +1,13 @@
+
+ASSIGNMENT 4: Enhance Java Console based Product Management App into Product Service REST API to perform CRUD operations with validation, content negotiation and exception handling with Spring Boot Data JPA integration
+
+	Product Service
+	GET 	/products
+	GET	/products/{id}		
+	POST	/products
+	PUT	/products/{id}
+	DELETE	/products/{id}
+	
+	GET 	/products/stats
+	POST	/products/import
+	POST	/products/export

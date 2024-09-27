@@ -43,8 +43,6 @@ cts-bootcamp-java-msb-react-azure
 
 				|__springboot
 					|
-					|__ productapp-with-sboot-rest
-					|
 					|__ productapp-with-sboot-data-jpa
 
 				|__microservices

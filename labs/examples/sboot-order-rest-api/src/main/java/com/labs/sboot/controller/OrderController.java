@@ -22,9 +22,9 @@ import java.util.stream.Collectors;
 public class OrderController {
 
     @Autowired
-//    @Qualifier("orderServiceColImpl")
+    @Qualifier("orderServiceColImpl")
 //    @Qualifier("orderServiceJpaImpl")
-    @Qualifier("orderServiceRepositoryImpl")
+//    @Qualifier("orderServiceRepositoryImpl")
     private OrderService orderService;
 
     // CREATE       POST /orders

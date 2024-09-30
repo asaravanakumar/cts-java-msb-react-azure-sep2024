@@ -19,6 +19,18 @@ Design Principles
 	- Liskov's Substitution Principle
 		Derived types must be completely substitutable for their base types.
 
+		Shape
+			area()
+
+		Square
+			area(4*a)
+
+		Rectangle
+			area(l*b)
+
+		Circle
+			area()
+
 	- Interface Segregation Principle
 		Clients should not be forced to depend upon interfaces that they don't use.
 	
@@ -46,14 +58,65 @@ Design Patterns Usages
 		- Design patterns have been evolved over a period of time and they provide best solutions to certain problems faced during software development
 
 Design Pattern Types
-	- Creational Patterns
+	- Creational Patterns (5 patterns)
 		- Provides a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator
 		- Gives program more flexibility in deciding which objects need to be created for a given use case.
-	- Structural Patterns
+
+		Singleton
+		Factory
+		Abstract
+		Prototype
+		Builder
+
+		StringBuilder
+			.append()
+			.append()
+		
+		Product.id().name().build()
+
+	- Structural Patterns (6 Patterns)
 		- These design patterns concern class and object composition.
 		- Concept of inheritance is used to compose interfaces and define ways to compose objects to obtain new functionalities.
-	- Behavioral Patterns
+
+		Proxy
+		Bridge
+		Adapter
+		Decorator
+		Fly Weight
+		Composite
+		Facade
+
+		
+	- Behavioral Patterns (11 Patterns)
 		- These design patterns are specifically concerned with communication between objects.
+			
+		Chain of Responsibility
+		Command
+		Iterator
+		Observer
+		Strategy
+		Template
+		Mediate
+		Momento
+		Interpreter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

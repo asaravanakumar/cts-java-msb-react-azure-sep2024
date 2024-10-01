@@ -47,7 +47,10 @@ cts-bootcamp-java-msb-react-azure
 
 				|__microservices
 					|
-					|__ productapp-**-service
+					|__ productapp-registry-service
+					|__ productapp-product-service
+					|__ productapp-order-service
+					|__ productapp-gateway-service
 
 				|__frontend
 					|

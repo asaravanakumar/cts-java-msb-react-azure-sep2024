@@ -1,0 +1,33 @@
+
+Assignment #6: Service Discovery with Eureka
+**Objective:** Implement service discovery using Spring Cloud Eureka.
+
+**Tasks:**
+1. Create a Eureka server.
+2. Modify the Product service to register with the Eureka server.
+3. Create a second service (e.g., `Order` service) and register it with Eureka.
+4. Implement a simple communication between the `Product` and `Order` services using Eureka with LoadBalancer/OpenFeign
+
+Assignment #7: API Gateway with Spring Cloud Gateway
+**Objective:** Set up an API Gateway to route requests.
+
+**Tasks:**
+1. Create an API Gateway Spring Cloud Gateway.
+2. Configure routes to the `Product` and `Order` services.
+3. Configure LoadBalancer for the API Gateway to access the services
+
+### Assignment 8: Circuit Breaker Pattern with Resilience4j
+**Objective:** Implement fault tolerance using circuit breakers.
+
+**Tasks:**
+1. Integrate Resilience4j into one of your microservices (e.g., the `Order` service).
+2. Implement a circuit breaker for a call to the `Product` service.
+3. Simulate a failure in the `Product` service and observe the behavior of the `Order` service.
+
+Assignment #9: Configuration Management with Spring Cloud Config
+**Objective:** Centralize configuration management.
+
+**Tasks:**
+1. Set up a Spring Cloud Config server.
+2. Store configurations for the `Product` and `Order` services in a Git repository.
+3. Modify the services to fetch their configurations from the Config server.

@@ -31,3 +31,20 @@ ASSIGNMENT 08: Configuration Management with Spring Cloud Config
 1. Set up a Spring Cloud Config server.
 2. Store configurations for the `Product` and `Order` services in a Git repository.
 3. Modify the services to fetch their configurations from the Config server.
+
+
+ASSIGNMENT 09: Messaging with Kafka
+**Objective:** Implement asynchronous communication.
+
+**Tasks:**
+1. Integrate Kafka with Spring Boot to enable asynchronous communication between the services
+2. Enhance the product service to send messages on 'product-events' topic when a new product is created 
+3. Create a notification-service that listens for product creation events and logs them.
+
+ASSIGNMENT 10: Handling Distributed Transactions with Saga Pattern
+**Objective:** Implement a Saga pattern for managing distributed transactions.
+
+**Tasks:**
+1. Define a business process that requires coordination between multiple microservices (e.g., creating an order that requires product availability).
+2. Implement a Saga using either the choreography or orchestration approach.
+3. Handle compensation logic for rollback scenarios.

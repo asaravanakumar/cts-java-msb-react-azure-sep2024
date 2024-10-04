@@ -22,10 +22,10 @@ bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-fac
 #STEP 8: Run below command to describe kafka topic
 bin/kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic test
 
-#STEP 9: Run below command to run console kafka producer
+#STEP 9: Run below command to run console kafka producer (open new terminal and follow STEP 4 & 5)
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
 
-#STEP 10: Run below command to run conosle kafka consumer
+#STEP 10: Run below command to run conosle kafka consumer (open new terminal and follow STEP 4 & 5)
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --group test-group
 
 #STEP 11: Run below command to list consumer groups
@@ -34,4 +34,5 @@ bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
 #STEP 12: Run below command to describe consumer groups
 bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group test-group
 
-
+#STEP 13: Run below command to stop Kafka and Zookeeper from docker compose (use existing or open new terminal and follow STEP 1)
+sudo docker compose -f kafka-docker-compose.yml down

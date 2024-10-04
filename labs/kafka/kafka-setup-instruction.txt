@@ -36,3 +36,7 @@ bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --grou
 
 #STEP 13: Run below command to stop Kafka and Zookeeper from docker compose (use existing or open new terminal and follow STEP 1)
 sudo docker compose -f kafka-docker-compose.yml down
+
+###Commands to find existing process for given IP and kill
+netstat -anop | grep "8080" | find "LISTEN"
+sudo kill -9 8080

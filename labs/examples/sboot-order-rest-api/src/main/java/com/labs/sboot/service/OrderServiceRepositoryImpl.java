@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-//@Primary
+@Primary
 public class OrderServiceRepositoryImpl implements OrderService {
 
     @Autowired

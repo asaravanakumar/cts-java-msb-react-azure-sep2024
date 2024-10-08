@@ -48,3 +48,10 @@ ASSIGNMENT 10: Handling Distributed Transactions with Saga Pattern
 1. Define a business process that requires coordination between multiple microservices (e.g., creating an order that requires product availability).
 2. Implement a Saga using either the choreography or orchestration approach.
 3. Handle compensation logic for rollback scenarios.
+
+### Assignment 11: Security with JWT
+**Objective:** Secure your Microservices using JWT.
+
+**Tasks:**
+1. Set up Spring Security Auth Service to issue JWT tokens
+2. Secure Product Service with JWT token based authentication

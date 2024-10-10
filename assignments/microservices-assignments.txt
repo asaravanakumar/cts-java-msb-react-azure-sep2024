@@ -56,6 +56,6 @@ ASSIGNMENT 10: Handling Distributed Transactions with Saga Pattern
 1. Set up Spring Security Auth Service to issue JWT tokens
 2. Secure Product Service with JWT token based authentication
 
-### Assignment 12: Containerize above microservices and upload into DockerHub Account
+### Assignment 12: Containerize above registry-service, product-service and gateway-service and upload into DockerHub Account
 
 ### Assignment 13: Deploy the containerized microservices into K8s

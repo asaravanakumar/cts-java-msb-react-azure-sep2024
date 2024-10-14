@@ -59,3 +59,6 @@ ASSIGNMENT 10: Handling Distributed Transactions with Saga Pattern
 ### Assignment 12: Containerize above registry-service, product-service and gateway-service and upload into DockerHub Account
 
 ### Assignment 13: Deploy the containerized microservices into K8s
+
+### Assignment 14: Create GraphQL API to Query and Mutate Account details
+

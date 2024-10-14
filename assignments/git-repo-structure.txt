@@ -56,6 +56,9 @@ cts-bootcamp-java-msb-react-azure
 					|__ productapp-admin-service
 					|__ productapp-auth-service
 
+				|__graphql										|
+					|__ account-service
+
 				|__frontend
 					|
 					|__ productapp-**-ui

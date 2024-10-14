@@ -15,9 +15,9 @@ public class SpringBootGraphqlDemoApplication {
 
 	@PostConstruct
 	public void loadBooks() {
-		bookService.saveBook(new Book( "J.K. Rowling", "Harry Potter and the Chamber of Secrets"));
-		bookService.saveBook(new Book("J.R.R. Tolkien", "The Lord of the Rings"));
-		bookService.saveBook(new Book("Jeffrey Archer", "Not a Penny More, Not a Penny Less"));
+		bookService.saveBook(new Book("Harry Potter and the Chamber of Secrets","J.K. Rowling"));
+		bookService.saveBook(new Book("The Lord of the Rings", "J.R.R. Tolkien"));
+		bookService.saveBook(new Book("Not a Penny More, Not a Penny Less", "Jeffrey Archer"));
 	}
 
 	public static void main(String[] args) {

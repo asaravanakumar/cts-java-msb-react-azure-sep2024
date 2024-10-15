@@ -1,0 +1,657 @@
+[20-Sep-2024] Java Basics & Collections & DSA Recap
+
+	- 1995
+	- Java 23
+	- LTS (Long Term Support)
+	- 21 LTS (2023)
+	- Feature Release Cycle - 6 months (Mar/Sep)
+	- LTS Release - 2 yrs
+
+	LTS
+
+	- Java 8
+	- Java 11
+	- Java 17
+	- Java 21
+
+
+Dequeue queue = new LinkedList()
+
+queue.offer()
+queue.add()
+
+queue.poll()
+queue.remove()
+
+queue.peek()
+queue.element()
+
+
+Dequeue stack = new LinkedList()
+
+stack.push() -> stack.offerFirst()
+stack.pop()  > stack.pollFirst()
+
+
+Stack <- Vector
+
+
+[23-Sep-2024] JVM Architecture & Java 8 Features Recap
+
+JVM Architecture
+
+    - Class Loader
+	- Loading
+		- Bootstrap Loader
+            - Extension Loader
+            - Application Loader
+        - Linking
+        - Initialisation
+    - Runtime Data Area [Memory Mgmt]
+        - Metaspace -> static data, class files
+        - Heap -> objects
+        - Stack -> local variables, method call stack
+        - Native Stack
+        - PC Register
+    - Execution Engine
+        - Interpreter
+        - JIT Compiler
+        - Garbage Collector
+            - Serial Collector [Stop the World]
+            - Parallel Collector
+            - Concurrent Mark Sweep
+            - G1 GC
+
+Java 8 Features
+	
+	- Functional Interfaces
+
+	Standard Functional Interfaces
+
+	Predicate -> takes an arg and returns boolean => a>10 - true|false [booelan test(T)]
+	Function.  -> takes an arg and returns value => a+b = c	[T apply(T)]
+	Consumer -> takes an arg and no return	[void accept(T)]
+	Supplier    -> takes no arg and returns a value [T get()]
+	UnaryOperator -> takes an arg and return value of same type
+
+
+	BiPredicate
+	BiFunction
+	BiConsumer
+	BinaryOperator
+
+	- Lambda Expressions
+	- Method References
+	- Optional 
+	- Stream API
+		- Stream Source [Collection, Array, IO Channel] -> Intermediate Operations [Filter, Map, Sorted, Distinct, etc..] -> Terminal Operation [Collect, Count, forEach, Reduce] 
+			Collectors - collect, grouping, counting, averaging, summing, sorting
+
+		- Parallell Stream -> ForkJoinPool
+			- Concurrency Issue -> Thread Safe / 	Concurrent Collection
+			- Not suitable for sequential / ordered processing
+			- Suitable for Stateless - Avoid stateful operations - Sort, Distinct, Limit
+			- CPU Bound / Intensive operations
+	- Default Methods
+
+[24-Sep-2024] Java 8 (DateTime), 11 & 17 Features Recap
+
+	Java 8 Features
+
+		- DateTime
+
+	Java 11 Features
+
+
+	Java 17 Features
+
+[25-Sep-2024] Java Concurrency
+
+[26-Sep-2024] Spring Core / Boot Intro
+
+[27-Sep-2024] Spring Boot REST / 
+
+
+
+
+[30-Sep-2024] Microservices Architecture Intro / Design Patterns
+
+[01-Oct-2024] Decomposition Patterns / Microservices Chasis / Service Discovery / API Gateway
+
+[03-Oct-2024] Circuit Breaker / Configuration Management / Asynchronous Communication with messaging (Kafka) 
+[04-Oct-2024] Asynchronous Communication with messaging (Kafka) / Data Management Patterns
+
+[07-Oct-2024] Data Querying Patterns / Microservices Testing
+
+[08-Oct-2024] Microservices Testing / Microservices Security 
+
+
+
+Architecture Styles
+
+		Monolith Architecture
+				
+		Distributed Architecture
+			SOA - Centralised / Orchestrated / ESB / SOA Manager
+			MSA -  Decentralised / Choreographed
+
+		MSA Characteristics
+		
+		1) Componetization via Services
+		2) Organised Around Business Capability
+		3) Products not Projects
+		4) Smart Endpoints Dumb Pipes
+		5) Decentralised Data Management
+		6) Decentralised Governance
+		7) Design for Failure (Fault Tolerance / Resilient)
+		8) Infrastructure Automation
+		9) Evolutionary Design
+
+		Benefits
+
+		Limitations
+
+		Monolith to MSA Migration
+
+		1) New features as separate services
+		2) Decompose functionality into multiple services
+		3) Decompose data base into multiple data models
+
+		Stranggler Pattern
+
+
+Microservices Patterns
+
+	- Design
+
+		- Decomposition
+			- Decompose by Business Capability
+			- Decompose by Business Sub-Domain (DDD)
+
+	- Development
+
+		- Cross Cutting Concerns [Logging, Caching, Security, Validation, Health Check, Metrics, Distributed Configuration, Discovery, Circuit Breaker, etc…]
+				- Service Template
+				- Microservice Chassis [Spring Boot + Spring Cloud]
+										[Spring Boot + Spring Cloud + K8s]
+										 [Spring Boot + K8s/EKS/AKS/GKE/Openshift + Istio + Kafka] Recommended
+										[Spring Boot + PaaS (Cloud Foundry, Heroku) ]
+				- Configuration Management
+					- Spring Cloud Config Server
+						application.yml
+						product-service.yml
+						order-service.yml
+
+					- Spring Cloud Config Client
+							bootstrap.yml
+							application.yml
+
+		- Discovery
+				- Service Registry [ Eureka Server]
+					- Eureka (Netflix)
+					- Zookeeper
+					- Consul
+					- etcd
+				- Self Registration [Eureka Client]
+				- Third Party Registration [Netflix Prana, Registrator, K8s/Marathan, Container Buddy ]
+				- Client Side Discovery [Eureka Client]
+				- Server Side Discovery [API Gateway]
+
+		- External Communication
+			- API Gateway [Spring Cloud Gateway | Apigee | Apia | WSO2 API Manager | AWS API Gateway]
+
+		- API Gateway [Spring Cloud Gateway, Zuul, Apigee, Apim, Kong, WSO2 API Manager, AWS/Azure Gateway]
+			- Routing
+			- Security [AuthN/AuthZ)
+			- Load Balancing
+			- Service Discovery
+			- Circuit Breaker
+			- Rate Limiting
+			- Metrics Collection / Analysis
+			- Backends for Frontends
+
+		- Communication
+			- Sync	[REST, GraphQL, gRPC, Thrift]
+			- Async [Kafka, RabbitMQ, ActiveMQ, SQS]
+
+		- Load Balancing
+
+			- Client Side Load Balancing
+				- Netflix Ribbon (Deprecated)
+				- Spring Cloud Load Balancer (Active)	
+
+			- Server Side Load Balancing
+
+			- REST - RestTemplate  | WebClient | RestClient | OpenFeign (Service Discovery | Load Balancing)
+
+		- Resiliency (Circuit Breaker) 
+			- Hystrix (Netflix, Deprecated)
+			- Resilience4J (Active)
+			
+			- Time Limiting	-> Gives fallback response once the time elapsed
+			- Circuit Breaker ->
+
+					slidingWindow		- 	30s [TimeBased | CountBased]
+					failureThreshold	-     50%
+					waitDuration		-     10s
+					
+					CLOSED -> OPEN
+					OPEN -> HALF_OPEN
+					HALF_OPEN -> CLOSED
+					HALF_OPEN -> OPEN
+
+					AGW -> A ->LB/CR1-> B1, B2, B3 ->CR2-> C ->CR3-> D
+
+			- Retry
+			- Rate Limiting
+			- BulkHead
+
+
+		Kafka
+				Distributed Messaging and Streaming Platform
+
+				Queue vs Topic
+				
+				Architecture
+					Producer1 -> 	Broker1 -> Consumer1
+					Producer2		Broker2	Consumer2
+									Broker3
+
+				Concepts
+
+					Producer | Publisher
+					Consumer | Subscriber
+					Broker	
+					Topic
+						- Partition -> 3
+							- stream of messages
+							- offset
+						- Replication -> 3
+
+						Primary Partition -> 3 
+						Replica Partion	   -> 6
+					
+					Producer Config Acks
+						0 	- No Acks - Fire and Forget - Less Durable and Low Latency
+						1	- Acks from Leader Partitions - Moderate
+						-1	- All Acks - Highly Durable and High Latency
+
+					
+					Consumer Group (Subscriber - can have any number of CGs)
+						- one or more consumer instances (=< no of partitions)
+
+				Spring Boot Kafka Integration
+					
+					STEP 1: Add spring-kafka dependency
+					STEP 2: Configure kafka bootstrap server details -> localhost:9092, localhost:9093, localhost:9094
+					STEP 3: Create Kafka topic (optional)
+					STEP 4: Publish message using KafkaTemplate
+					STEP 5: Consume message using @KafkaListener		
+
+
+		- Data Management 
+			- Shared Database
+			- Database per Service
+				- Data Management / Consistency
+			 		- Saga -> Series of Local Transactions
+						- Choreography
+						- Orchestration
+
+					- Transactional Outbox
+					- Event Sourcing
+
+				- Distributed Queries
+					- API Comp
+					- CQRS
+
+		- UI
+
+		Netflix
+			- Eureka [Active]
+			- Zuul [Not Active, Maintenance Mode, Sync/Blocking/Servlet] -> Spring Cloud Gateway (Async/Non-Blocking/Reactive)
+			- Ribbon [Load Balancer, Not Active, Maintenance Mode, Sync/Blocking/Servlet] -> Spring Cloud LoadBalancer (Async/Non-Blocking/Reactive)
+			- Hystrix [Circuit Breaker, Not Active, Maintenance Mode] -> Resilence4J [Light Weight, Modular]
+			- Turbine [Not Active, Maintenance Mode] -> Micrometer, Prometheus
+
+	- Testing
+		
+			Unit Testing - JUnit, Mockito, AssertJ, Hamcrest [spring-boot-started-test]
+			Integration Testing / API Testing - RestAssured, SpringMvcMock, Mockserver, TestContainers
+
+			Component Testing
+			Contract Testing - PACT, Spring Cloud Contract
+			End to End Testing
+
+
+			Functional Testing - Selenium, Cypress, Meter
+			Regression Testing
+			User Acceptance Testing
+			Performance Testing - LoadRunner, Gatling, JMeter
+
+			Black Box Testing
+			UI/UX Testing
+
+			
+			JUnit4 vs JUnit5
+
+			JUnit5
+				@Test
+				@BeforeAll
+				@AfterAll
+				@BeforeEach
+				@AfterEach
+				
+	
+	- Security
+
+		Authentication - checks the identity -> 401
+		Authorization - authorises the users to do some tasks based on their privileges / permissions -> 403
+
+
+		CORS - Cross Origin Resource Resource
+		CSRF - Cross Site Request Forgery
+
+
+		Spring Security
+
+			Context
+
+			SecurityContext -> Holds authentication information
+			SecurityContextHolder -> util class to access the SecurityContext
+
+			Authentication
+
+			Authentication Manager - central component to handles authentication requests and delegates to auth providers (in-memory, database, LDAP, Azure AD, Keycloak, Okta, etc..)
+			UserDetailsService - maintains user details viz. username and password and other preferences
+			
+			Authorization
+
+			Access Control - determines whether user has permission to access a specific resource -> ROLE BASED (RBAC) | METHOD LEVEL SECURITY
+			Granted Authority - represents an authority granted to the user i.e. Role
+			
+			Filters
+			
+			Filter Chain - uses chain of filters to process requests. Each filter may have different responsibility (authN, authZ, sessionMgmt)
+			WebSecurityConfigurerAdapter - allows to customise the security filter chain
+
+			Password Encoding
+
+			PasswordEncoder - BCrypt - one way encryption
+
+			Session Management
+
+			Session Fixation Protection - protects from session fixation attacks
+			Concurrent Session Control - limits the number of concurrent sessions
+
+			CSRF Protection
+			
+			CORS Support
+
+			OAuth2 / JWT Support
+			
+			
+			Basic Authentication [Not so secured] -> Authorisation - Basic base64endcoded(username:password)
+
+			Token Based Authentication [Secured]
+
+				JWT Structure
+                Header
+                Payload
+                Signature
+
+				JWT Token Verification
+					CustomAuthFilter
+						Extract the Token from the Header -> Authorization - Bearer <OAuth2/JWT>
+						Decode JWT Token
+						Convert To UserPrincipal
+						Create UserPrincipalAuthenticationToken
+						Set into SecurityContext
+
+		
+				OAuth2 (Open Authorization)
+
+				Roles
+					ResourceOwner
+					ResourceServer - Google
+					AuthorizationServer - Google
+					Client - LinkedIn
+
+				Grants
+					Implicit
+					Client Credentials
+					ResourceOwner Credentials
+					Authorization Grant
+
+				OAuth2 + JWT
+			
+
+	- Observability / Monitoring
+
+		- Health Checks - HealthIndicator -> health()
+		- Application Metrics -> Prometheus, Grafana, AppInsights, Dyna Trace, Datadog, New Relic, Splunk
+		- Log Aggregation -> ELK / Elastic Stack, Splunk, Paper Trail
+		- Exception Tracking
+		- Distributed Tracing -> Spring Cloud Sleuth, Zipkin, Jaeger, Open Tracing, Honeycomb 
+		- Audit Logging
+		- Logging Deployment and Release Changes
+
+	- Deployment
+
+		- VM
+		- Container -> Docker, Podman, rkt, CRI-O
+
+		- PaaS -> Cloud Foundry, Heroku, AWS ElasticBeanstalk, GCP AppEngine
+
+		- Serverless Computing -> AWS Lambda, Azure Functions, GCP Functions
+	
+
+	Docker
+		- Docker Client (CLI | GUI | Ext)
+		- Docker Deamon (Server)
+		- Image
+		- Container
+		- Registry (Local | Private - Nexus, Artifactory | Public - DockerHub)
+
+		docker images
+		docker ps
+		docker ps -a
+
+		
+		mysql -> 3306
+
+		docker pull mysql
+
+		docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root123 —name=mysqlserver mysql
+
+		docker logs
+		docker start
+		docker stop
+		docker rm
+
+		docker stats
+		docker top
+
+		Dockerfile
+			FROM base image
+			LABEL
+			RUN 
+			COPY
+			ENTRYPOINT | CMD
+			EXPOSE
+
+		docker build -t account-service .
+		docker run -d -p 8091:8091 account-service
+
+		docker compose
+
+
+	Container Orchestration / Management
+
+		LoadBalancing
+		AutoScaling
+		Self Healing
+		HA (High Availability)
+		Monitoring / Dahboards
+
+		Docker Swarm
+		K8s
+		Openshift
+		NoMad
+		
+
+   	K8s
+
+		Architecture
+
+			Client - Kubectl | Dashboard
+
+			Master / Control Plane
+
+				API Server
+				etcd
+				Kube Controller Manager -> Replication Controller Manager, Deployment Controller Manager, Job Controller Manager, etc.
+				Kube Scheduler
+				Cloud Controller Manager
+
+			Worker Nodes / Data Plane
+				
+				Kubelet
+				Kube Proxy
+				Container Runtime - Docker Engine, Podman, rkt, etc…
+				
+		K8s Manifest file
+
+			Labels
+			Annotations
+			Selectors
+						
+		Concepts
+
+
+			Pod -> one or more container -> have unique IP address and identity
+			Replication Controller / ReplicatSet
+			Deployment -> Replica Set -> Pods
+	
+			Services
+
+				ClusterIP
+				NodePort
+				LoadBalancer
+
+
+	
+	GraphQL
+
+		REST vs GraphQL
+
+		Spring Boot Integration with GraphQL
+
+		1. Add GraphQL dependency - spring-boot-starter-graphql
+		2. Create Controller / QueryResolver with @Controller, @QueryMapping, @Argument, @MutationMapping
+		3. Create schema.graphqls file under resources/graphql
+		4. Enable graphiql in application config
+	
+		GraphQL Data Types
+
+		Object Types
+		Scalar Types
+			ID
+			String
+			Boolean
+			Int
+			Float
+
+		GraphQL Schema
+
+		type Product {
+			id: ID!
+			name: String!
+			category: String!
+			price: Float	
+		}
+
+		type Order {
+			id: ID!
+			desc: String!
+			qty: String!
+			products: [Product!]!	
+		}
+
+
+		Enums
+
+		enum AccountType {
+
+			SAVNINGS
+			CURRENT
+			LOAN
+
+		}
+
+		Interfaces
+
+		interface Account {
+
+		}
+		
+		type LoanAccount implements Account {
+
+		}
+
+		type SavingsAccount implements Account {
+
+		}
+
+		type CurrentAccount implements Account {
+	
+		}
+
+		Union
+
+		union offer = Coupon | Discount | Sale
+
+		
+		Queries
+		
+		type Query {
+
+			getProducts: [Products]
+			getProduct(id: ID!) : Product
+			filterProductByCategoryAndPrice(category: String, price: Float): [Products] 
+
+		}
+
+		Mutations
+
+		type Mutation {
+
+			addProduct(name: String, category: String, price: Float): Product
+			updateProductPrice(id: ID, price: Float): Product
+			deleteProductPrice(id: ID): Product
+		}
+			
+			
+		http://localhost:9090
+
+
+		http://localhost:9090/graphql - POSTMAN
+
+		http://localhost:9090/graphiql - WEB UI
+
+
+		CI / CD
+
+		CircleCI
+		TravisCI
+
+		Jenkins		
+		GitHub Actions
+
+		GitLab
+		Bamboo
+
+		
+		Azure DevOps
+		AWS DevOps
+		GCP DevOps
+		

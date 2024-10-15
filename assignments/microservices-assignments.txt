@@ -62,3 +62,4 @@ ASSIGNMENT 10: Handling Distributed Transactions with Saga Pattern
 
 ### Assignment 14: Create GraphQL API to Query and Mutate Account details
 
+### Assignment 15: Setupt Jenkins Pipleline Job to automate the GraphQL API build and package process

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- will not be viewable in browser's view port -->
+    <title>About Cognizant</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="intelligent process automation,cloud services, Data & AI, IT consulting, IT Services company">
+    <meta name="description" content="Anticipate trends. Drive meaningful change. Outthink your competition. That's the power of intuition—and we can engineer it. Learn more.">
+
+    <!-- will explain during responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Styles loaded  -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+
+    
+  </head>
+
+  <body>
+    <!-- will be viewable in browser's view port -->
+    <header>
+      <div id="mainHeader">
+        <a href="/index.html" class="logoLink">
+          <img src="./assets/images/Cognizant-Logo.svg" alt="Cognizant Logo"
+          width="262">
+        </a>
+        <nav class="primaryNav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./js-demo.html">JS Demo</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main style="width: 1180px; margin:0 auto;">
+      
+      <h1>JS Demo</h1>
+
+      <!-- Inline JS -->
+      <!-- <button onclick="alert('Clicked')">Learn JS</button> -->
+
+      <!-- onclick is an event | handleClick is an event handler fn -->
+      <button onclick="handleClick(event)">
+        Learn JS
+      </button>
+
+      <button onclick="handleClick(event)">Click Me</button>
+
+      <h2>HTML 5 JS API</h2>
+      <h3>Storage | LocalStorage and SessionStorage </h3>
+      <input type="text" id="pincodeInput" name="pincode" placeholder="Enter Pincode">
+      <button type="button" id="savePincodeBtn">Save Pincode</button>
+      <div id="savedPincodes">
+        <!--TODO: Display the saved pincode here -->
+      </div>
+      <!-- TODO: Experiment with sessionStorage later -->
+
+      <hr />
+      <h3>Geolocation API Demo</h3>
+      <button type="button" id="locateMeBtn">Locate Me</button>
+      <div id="locationBox">
+      </div>
+
+      <hr/>
+      <!-- TODO: Experiment with Drag and Drop  -->
+      <h3>TODO: Experiment with Drag and Drop </h3>
+
+      <h3>Custom Components</h3>
+      <div>
+        <popup-info 
+        img="./assets/images/social_twitter.png" 
+        data-text="Twitter is a microblogging and 
+        social networking service owned by American company 
+        Twitter, Inc.,"></popup-info></label>
+        
+        <popup-info 
+        img="./assets/images/linkedin_social_icon.png" 
+        data-text="LinkedIn is an American business and 
+        employment-oriented service that operates
+         via websites and mobile apps. 
+         Founded on December 28, 2002"></popup-info></label>
+
+      </div>
+
+
+    </main>
+
+
+    <footer>
+      <hr>
+      <a href="https://www.linkedin.com/company/cognizant">
+        <img src="./assets/images/linkedin_social_icon.png" 
+        alt="Cognizant's LinkedIn Company Page"></a>
+      <a href="https://twitter.com/cognizant">
+        <img src="./assets/images/social_twitter.png"
+        alt="Cognizant's Twitter Profile"></a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./js-demo.html">JS Demo</a></li>
+        </ul>
+      </nav>
+
+      <p>&copy; Copyright 2022 | Arun</p>
+    </footer>    
+
+    <script>
+      // Internal JS 
+      // NOT Recommended to exec JS in head section
+      // it will become render-blocking JS
+
+      // function handleClick(){
+      //   alert('clicked');
+      // }
+
+    </script>
+
+    <!-- External JS is recommended -->
+    <script src="./assets/scripts/main.js"></script>
+
+
+
+  </body>
+</html>

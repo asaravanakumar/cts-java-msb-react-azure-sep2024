@@ -1,0 +1,129 @@
+Website:
+--
+  1. Static Websites 
+      Cognizant v1, v2 
+
+      HTML + CSS + JS 
+
+  2. Dynamic Websites 
+      Cognizant v3 
+
+Webapps:
+--
+  1. Server Side Rendering 
+  2. Client Side Rendering
+
+Browser
+---
+  1. HTML Renderer (html)
+  2. CSS Parser (css)
+  3. JS Engine (js)
+
+HTML 
+--
+  * Structural Layer 
+
+  2 Types  of Elements 
+  -
+    1. Block Level Elements
+        h1 to h6 
+        p 
+
+    2. Inline Elements
+        a 
+        button        
+
+CSS 
+--
+  * Presentation Layer 
+
+
+JS 
+--
+  * Interaction Layer 
+
+
+Web Layout
+-==
+  1. Fixed
+  2. Fluid 
+
+
+---
+
+PascalCase 
+--
+  Object oriented classes, Interfaces 
+
+  class CarInfo {
+
+  }
+
+camelCase 
+--
+  id, css classes 
+  js variables, functions, methods 
+
+
+kebab-case 
+--
+  id, css classes 
+
+
+snake_case
+--
+  NEVER USE 
+
+CSS 
+--
+  Fundamentals 
+  --
+    * Presentation Layer 
+    * Cascading Style Sheet 
+    * 3 Types of Styles / CSS 
+      1. Inline CSS 
+          * Coded directly on the elements 
+          * coded with style attribute 
+
+          Disadv
+          --
+            1. Styles can't be used in other elements 
+            2. Styles can't be used in other pages 
+            3. Logical separation of layers can't be followed 
+
+      2. Internal CSS 
+          * Coded inside the html file itself 
+          * coded in between <style> /* Internal styles */ <style> inside head tag 
+
+          Disadv
+          ---
+            1. Styles can't be used in other pages 
+            2. Unorganized code
+            
+      3. External CSS 
+          * Coded in separate .css file 
+          * Loaded inside html files 
+
+
+  CSS Syntax 
+  ---
+    selector {
+      /* style definitions */
+      property: value;
+    }
+
+
+  Selectors 
+  --
+    1. Element Selector (NOT RECOMMENDED)
+    2. ID Selector 
+    3. Class Selector (RECOMMENDED)
+    4. Attribute Selector
+    5. Pseudo Selector [TODO]
+
+  CSS Precedence
+
+
+  Browser Family 
+
+  Conventions 

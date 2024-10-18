@@ -15,6 +15,22 @@
 
     <!-- will explain during responsive web design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External Styles loaded  -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- Internal Styles can be here -->
+    <style>
+      /* Element Selector */
+      button {
+        background-color: aqua;
+        color: #000048;
+        padding: 10px 20px;
+        border: 1px solid aqua;
+        border-radius: 20px;
+        font-size: 16px;
+      }
+    </style>
   </head>
 
   <body>
@@ -43,7 +59,10 @@
     <main>
       <section class="jumbotron">
         <div class="bannerWrapper">
-          <h1>Intuition engineered—human insight at superhuman speed</h1>
+          <!-- inline css -->
+          <h1 style="color: #fff; font-size: 50px">
+            Intuition engineered—human insight at superhuman speed
+          </h1>
           <p>
             Anticipate trends. Drive meaningful change. Outthink your
             competition. That's the power of intuition—and we can engineer it.
@@ -142,7 +161,7 @@
         </ul>
       </nav>
 
-      <p>&copy; Copyright 2024 | Saravana</p>
+      <p>&copy; Copyright 2024 | Cognizant</p>
     </footer>
   </body>
 </html>

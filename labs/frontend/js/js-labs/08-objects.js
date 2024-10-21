@@ -2,13 +2,13 @@
 // behaviour - functions
 
 // Approach #1 - Object creation
-// let emp = { "id": 100, "name": "Ajay", "salary": 75000.0, "designation": "Software Engineer" };
+let emp = { "id": 100, "name": "Ajay", "salary": 75000.0, "designation": "Software Engineer" };
 
-// console.log(emp);
-// console.log(typeof emp);
+console.log(emp);
+console.log(typeof emp);
 
-// // Approach #1: dot notation
-// // emp.designation = 1000;
+// Approach #1: dot notation
+// emp.designation = 1000;
 // console.log(emp.id + ' ' + emp.designation);
 
 // // Approach #2: bracket notation
@@ -36,31 +36,31 @@
 // }
 
 // Approach #4 - Object creation using Class
-class Department {
-    constructor(id, name) {
-        console.log('constructor(id, name)')
-        this.id = id;
-        this.name = name;
-    }
+// class Department {
+//     constructor(id, name) {
+//         console.log('constructor(id, name)')
+//         this.id = id;
+//         this.name = name;
+//     }
 
-    // Can't overload constructor
-    // constructor(id) {
-    //     console.log('constructor(id)')
-    //     this.id = id;
-    // }
+//     // Can't overload constructor
+//     // constructor(id) {
+//     //     console.log('constructor(id)')
+//     //     this.id = id;
+//     // }
 
-    getDept() {
-        return this.id;
-    }
+//     getDept() {
+//         return this.id;
+//     }
 
     // Overloade will overwrite the fn defintion
     // getDept(name) {
     //     console.log('overloaded method');
     // }
-}
+// }
 
-let dept = new Department(123, 'Merchandise');
+// let dept = new Department(123, 'Merchandise');
 
-console.log(dept);
-console.log(dept.getDept('Marketing'));
+// console.log(dept);
+// console.log(dept.getDept('Marketing'));
 

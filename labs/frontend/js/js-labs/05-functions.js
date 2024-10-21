@@ -1,16 +1,16 @@
 // Type #1: Named Function
 
 // Function Defintion
-// function add(x,y) { // paramerters
-//     console.log("Adding nos");
-//     console.log(x + y);
-//     return x + y;
-// }
+function add(x,y) { // paramerters
+    console.log("Adding nos");
+    console.log(x + y);
+    return x + y;
+}
 
-// function add(x) {
-//     console.log("calling add(x)");
-//     console.log(x);
-// }
+function add(x) {
+    console.log("calling add(x)");
+    console.log(x);
+}
 
 
 // Function Call
@@ -52,20 +52,20 @@
 
 // Type #4: Passing fn as arguments
 
-let add = function(a,b) {
-    return a + b;
-}
+// let add = function(a,b) {
+//     return a + b;
+// }
 
-function compute(operation, a, b) {
-    return operation(a,b);
-}
+// function compute(operation, a, b) {
+//     return operation(a,b);
+// }
 
-let output = compute(add, 100, 200);
-console.log(output);
+// let output = compute(add, 100, 200);
+// console.log(output);
 
-console.log(compute(function(a,b){return a * b}, 100, 200));
+// console.log(compute(function(a,b){return a * b}, 100, 200));
 
-console.log(compute( (a,b) => a * b, 100, 200)); // Arrow Function
+// console.log(compute( (a,b) => a * b, 100, 200)); // Arrow Function
 
 // let abc = function() {
 //     console.log('testing');

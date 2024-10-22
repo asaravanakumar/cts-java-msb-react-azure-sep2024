@@ -1,0 +1,41 @@
+To open Visual Studio Code from the command prompt, you can use the `code` command. Here's how to set it up and use it:
+
+### Setting Up the `code` Command
+
+1. **Open Visual Studio Code**:
+   Launch Visual Studio Code from your Start menu or desktop shortcut.
+
+2. **Open the Command Palette**:
+   You can open the Command Palette by pressing `Ctrl+Shift+P` or `F1`.
+
+3. **Install 'code' Command**:
+   Type `Shell Command: Install 'code' command in PATH` in the Command Palette and press Enter. This will install the `code` command to your system's PATH.
+
+### Using the `code` Command
+
+Once you have set it up, you can open Visual Studio Code from the command prompt with the following steps:
+
+1. **Open Command Prompt**:
+   Open your Command Prompt by pressing `Win + R`, typing `cmd`, and pressing Enter.
+
+2. **Navigate to the Directory (Optional)**:
+   If you want to open a specific directory or file, use the `cd` command to navigate to that directory. For example:
+   ```bash
+   cd path\to\your\project
+   ```
+
+3. **Run the `code` Command**:
+   To open the current directory in Visual Studio Code, type:
+   ```bash
+   code .
+   ```
+   To open a specific file, type:
+   ```bash
+   code filename.ext
+   ```
+   To open a specific directory, type:
+   ```bash
+   code path\to\directory
+   ```
+
+That's it! Visual Studio Code should now open with the specified file or directory.

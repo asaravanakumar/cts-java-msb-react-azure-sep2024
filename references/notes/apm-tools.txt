@@ -1,0 +1,21 @@
+APM Tools
+
+New Relic: Offers comprehensive monitoring and analytics for web and mobile applications, with real-time insights into performance.
+
+Datadog: Provides monitoring and analytics for applications and infrastructure, with support for cloud environments.
+
+Dynatrace: Features AI-driven monitoring capabilities and supports full-stack observability, including cloud-native applications.
+
+AppDynamics: Focuses on business performance monitoring and provides insights into application performance and user experience.
+
+Elastic APM: Part of the Elastic Stack, it offers monitoring for applications along with powerful search and analytics capabilities.
+
+Prometheus: An open-source monitoring solution often used in containerized environments, particularly with Kubernetes.
+
+Grafana: While primarily a visualization tool, it integrates with various data sources to monitor application performance.
+
+SignalFx: A cloud monitoring solution that provides real-time visibility into application performance and infrastructure.
+
+Splunk APM: Offers robust application monitoring features with a focus on log management and analytics.
+
+Raygun: Provides error and performance monitoring, with detailed reports on crashes and performance issues.

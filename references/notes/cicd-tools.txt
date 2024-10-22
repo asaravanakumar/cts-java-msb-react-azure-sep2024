@@ -1,0 +1,19 @@
+Jenkins: An open-source automation server that supports building, deploying, and automating software projects.
+
+GitLab CI/CD: Integrated directly into GitLab, it allows for seamless CI/CD workflows alongside version control.
+
+CircleCI: A cloud-based CI/CD tool that offers fast builds and easy integration with various version control systems.
+
+Travis CI: A cloud-based CI service that is popular for open-source projects, supporting various programming languages.
+
+GitHub Actions: A feature of GitHub that allows you to automate workflows directly in your repositories.
+
+Azure DevOps: A suite of development tools by Microsoft that includes CI/CD services, project management, and more.
+
+Bitbucket Pipelines: An integrated CI/CD service in Bitbucket that allows you to automate your build and deployment processes.
+
+TeamCity: A commercial CI/CD server from JetBrains that offers advanced features for building and deploying applications.
+
+Bamboo: A CI/CD and build server from Atlassian that integrates with JIRA and Bitbucket.
+
+GitHub Actions: Automate workflows directly from your GitHub repository with triggers based on events.

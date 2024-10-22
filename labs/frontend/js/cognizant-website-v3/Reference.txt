@@ -1,0 +1,237 @@
+Website:
+--
+  1. Static Websites 
+      Cognizant v1, v2 
+
+      HTML + CSS + JS 
+
+  2. Dynamic Websites 
+      Cognizant v3 
+
+Webapps:
+--
+  1. Server Side Rendering 
+  2. Client Side Rendering
+
+Browser
+---
+  1. HTML Renderer (html)
+  2. CSS Parser (css)
+  3. JS Engine (js)
+
+HTML 
+--
+  * Structural Layer 
+
+  2 Types  of Elements 
+  -
+    1. Block Level Elements
+        h1 to h6 
+        p 
+
+    2. Inline Elements
+        a 
+        button        
+
+CSS 
+--
+  * Presentation Layer 
+
+
+JS 
+--
+  * Interaction Layer 
+
+
+Web Layout
+-==
+  1. Fixed
+  2. Fluid 
+
+----
+
+
+
+---
+
+PascalCase 
+--
+  Object oriented classes, Interfaces 
+
+  class CarInfo {
+
+  }
+
+camelCase 
+--
+  id, css classes 
+  js variables, functions, methods 
+
+
+kebab-case 
+--
+  id, css classes 
+
+
+snake_case
+--
+  NEVER USE 
+  for constants such as MAX_CLASSES_PER_STUDENT
+
+Read more: https://google.github.io/styleguide/jsguide.html
+And also: https://www.freecodecamp.org/news/clean-coding-for-beginners/
+
+
+CSS 
+--
+  Fundamentals 
+  --
+    * Presentation Layer 
+    * Cascading Style Sheet 
+    * 3 Types of Styles / CSS 
+      1. Inline CSS 
+          * Coded directly on the elements 
+          * coded with style attribute 
+
+          Disadv
+          --
+            1. Styles can't be used in other elements 
+            2. Styles can't be used in other pages 
+            3. Logical separation of layers can't be followed 
+
+      2. Internal CSS 
+          * Coded inside the html file itself 
+          * coded in between <style> /* Internal styles */ <style> inside head tag 
+
+          Disadv
+          ---
+            1. Styles can't be used in other pages 
+            2. Unorganized code
+            
+      3. External CSS 
+          * Coded in separate .css file 
+          * Loaded inside html files 
+
+
+  CSS Syntax 
+  ---
+    selector {
+      /* style definitions */
+      property: value;
+    }
+
+
+  Selectors 
+  --
+    1. Element Selector (NOT RECOMMENDED)
+    2. ID Selector 
+    3. Class Selector (RECOMMENDED)
+    4. Attribute Selector
+    5. Pseudo Selector [TODO]
+
+///
+Learn about Accessibility: https://www.w3.org/WAI/WCAG21/quickref/#principle1
+--
+    
+
+==
+
+JavaScript
+---
+  * Interaction Layer
+
+  3 Ways to add JS in HTML
+  --
+    1. Inline JavaScript [NOT RECOMMENDED]
+        * Coded directly on the elements 
+        * coded with events
+
+        Disadv
+        --
+          1. JS code can't be used in other elements 
+          2. JS code can't be used in other pages 
+          3. Logical separation of layers can't be followed 
+
+    2. Internal JavaScript
+        * Coded inside the html file itself 
+        * coded in between <script> /* Internal scripts */ <script> inside head/body tags 
+
+        Disadv
+        ---
+          1. JS codes can't be used in other pages 
+          2. Unorganized code 
+
+    3. External JavaScript
+        * Coded in separate .js file 
+        * Loaded inside html files mostly before the end of body tag 
+
+
+  variables
+  functions (3 types)
+
+  Events 
+  --
+    Types of Events 
+    Event Object 
+
+  arrays 
+  objects
+  Operators
+  templates in ES2015 
+  
+   Custom Elements
+   Adding Functionality Using Built-in JavaScript Libraries
+    HTML5 API (drag and drop, storage, geolocation)
+   NodeJs Introduction (1 hour)
+
+  SASS and LESS (20 mins)
+
+
+JS 
+===
+
+JS Basics
+
+/* 
+  Primitive Datatypes: string, number, boolean, undefined, null, symbol (in 2015), big int (in 2017)
+  
+  Non-Primitive Datatypes: arrays, objects, regexp 
+  
+  
+  * Object-based language 
+  * from 2015, it has become Object oriented language 
+*/
+
+
+// variables in JS 
+var x = 10; 
+x = 'Kumar'; 
+x = true; 
+console.log(x);
+
+
+Types of Languages 
+  1. Strictly-typed Languages
+      (Java, C#)
+
+      Syntax
+      ---
+        String myName = 'Arun'; 
+        myName = "Tim"; // valid
+        myName = true; // error 
+
+  2. Loosely-typed Languages
+      (JS, PHP, Python)
+      a.k.a dynamically typed languages 
+
+      Syntax
+      --
+        var myName = 'Kumar'; 
+        myName = true; // valid  
+        myName =  10; // valid 
+        myName =  undefined; // valid 
+        myName =  null; // valid 
+        myName =  []; // valid 
+        myName =  {}; // valid 
+        myName =  function() {}; // valid 
+

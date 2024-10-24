@@ -1,0 +1,10 @@
+
+ASSIGNMENT 16: Create React App to List Product Details
+**Objective:** Create React App with Vite + Typescript to List Product Details
+
+**Tasks:**
+1. Create a Header Component with MenuList options as HomePage and Products
+2. Create ProductListPage Component
+3. Create a Footer Component
+3. Make a API request to Product Service and get list of products
+4. Display the products details in a card layout

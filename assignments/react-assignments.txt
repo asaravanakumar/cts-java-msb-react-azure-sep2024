@@ -1,5 +1,5 @@
 
-ASSIGNMENT 16: Create React App to List Product Details
+ASSIGNMENT 16: Create React App to List Product Details (productapp-ui)
 **Objective:** Create React App with Vite + Typescript to List Product Details
 
 **Tasks:**

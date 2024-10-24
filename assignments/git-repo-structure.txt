@@ -61,7 +61,7 @@ cts-bootcamp-java-msb-react-azure
 
 				|__frontend
 					|
-					|__ productapp-**-ui
+					|__ productapp-ui
 
 				
 	|
